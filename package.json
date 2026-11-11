@@ -1,0 +1,16 @@
+{
+  "name": "valariflow-marketing",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24.0.0" },
+  "scripts": {
+    "dev": "node scripts/astro.mjs dev --host 127.0.0.1",
+    "build": "node scripts/astro.mjs build",
+    "preview": "node scripts/astro.mjs preview --host 127.0.0.1",
+    "test": "node scripts/verify.mjs",
+    "check:publication": "node scripts/publication.mjs"
+  },
+  "dependencies": { "astro": "6.4.8" },
+  "devDependencies": { "parse5": "8.1.1" }
+}

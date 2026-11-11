@@ -1,0 +1,149 @@
+{
+  "privacy-policy": [
+    "Privacy Policy",
+    [
+      [
+        "Who we are",
+        "ValariFlow is a business messaging and workflow service operated by [CONFIRM: legal operator name and postal address]. Privacy contact: valariflow@gmail.com. Effective date: [CONFIRM: effective date]. This document is a draft pending operator and legal review."
+      ],
+      [
+        "Our responsibilities and yours",
+        "For business account administration, security and commercial records, the operator determines the purposes of processing. For contacts and conversations uploaded or connected by a business, that business generally determines the purposes and ValariFlow processes data on its behalf. The exact roles depend on applicable law and the activity. Businesses must provide appropriate notices, obtain required permissions and use the service lawfully. [CONFIRM: customer processing agreement and instructions procedure]."
+      ],
+      [
+        "Marketing website and enquiries",
+        "This marketing website can prepare a demo or sales enquiry in your email app. You choose whether to send it. The fields are your name, business name, email, enquiry topic and optional message. Form values are not submitted to a website backend or saved in browser storage. If you send the email, your mail provider and the operator?s Gmail account process the enquiry. The public contact is valariflow@gmail.com. [CONFIRM: enquiry handling, retention, Gmail processing locations, applicable legal basis and privacy terms]. Do not include customer records, passwords or access tokens."
+      ],
+      [
+        "Information processed",
+        "Account information includes name, email, phone number, business name, password hash, approval status, workspace memberships and roles. The service stores contact names, phone numbers, optional email addresses, consent and opt-out records, conversations, message content, provider message identifiers, timestamps, delivery/status records and team assignments. It also stores workflow definitions, versions, campaign recipients and preview content, execution records, subscription records, credit transactions and payment-verification references. Security records include account/workspace identifiers, request references, session timestamps, a browser-family label and keyed hashes of attempted login emails."
+      ],
+      [
+        "Connected Meta accounts",
+        "When an authorized business connects WhatsApp, Instagram or Facebook assets, the service can process account/page identifiers, display names, connection status, access credentials, webhook events and messaging data supplied through Meta Platform APIs. Availability depends on the configured integration, permissions and provider approval. Data is used to connect authorized assets, route conversations, support permitted replies and record relevant status. Meta processes information under its own terms and privacy policies. Connecting an asset does not grant unrestricted messaging permission."
+      ],
+      [
+        "Why information is used",
+        "Information supports account approval and access, workspace administration, contact management, permitted messaging, workflow testing and execution, consent checks, credit accounting, troubleshooting, abuse prevention and security. Where a legal basis is required, [CONFIRM: map each purpose to the applicable basis, including contract, legitimate interests with assessment, consent or legal obligation]. No legal basis is asserted merely because data was uploaded."
+      ],
+      [
+        "Optional AI and database tools",
+        "Code supports an optional, server-configured AI drafting gateway that sends a submitted prompt after an explicit consent check. Its production provider and use are unconfirmed. Do not include customer personal information in drafting prompts unless approved. Optional database tools can hold connection details and read approved resources; the database/AI test implementation is restricted and does not establish a general external model service. [CONFIRM: enabled tools, destination providers, data categories, retention, training use and notices before enabling these features]."
+      ],
+      [
+        "Who can receive data",
+        "Authorized workspace members can access data according to their roles. Meta receives data necessary for enabled integrations. Hosting, storage and any enabled AI or support providers may process information on the operator’s behalf. [CONFIRM: actual provider legal names, services, processing countries and contracts]. Disclosure may also be required by applicable law; the grounds and scope must be assessed for the request. This draft does not establish a sale, advertising-sharing or model-training policy: [CONFIRM: operator policy]."
+      ],
+      [
+        "Security",
+        "The implementation hashes passwords with Argon2, stores hashes of session tokens, checks workspace membership and roles, and encrypts connected-provider credentials using authenticated AES-256-GCM encryption. Session cookies are HttpOnly and SameSite=Lax; Secure depends on deployment configuration. Audit and credit records have append-only protections in the database design. These measures do not establish encryption of all stored content, independent certification or a guarantee against incidents. [CONFIRM: deployed safeguards and incident contact process]."
+      ],
+      [
+        "Retention and deletion",
+        "There is no verified general automatic erasure process for accounts, contacts or messages. Disconnecting an integration clears its stored provider credential after successful disconnect; it does not erase conversations or all related records. Operator-run maintenance code supports removing old security events and expired/revoked sessions, but scheduling is unverified. Audit and credit records are protected from ordinary deletion. [CONFIRM: purpose-based retention periods, legal exceptions, deletion tooling, backup expiry and restore handling]. See the Data Deletion page for the draft request procedure."
+      ],
+      [
+        "Cookies and this website",
+        "The application uses an essential session cookie named valariflow_session, with a configured lifetime of 12 hours and a 30-minute session idle limit. No analytics or advertising scripts were identified in the reviewed application source. This marketing website uses a small email-draft helper on enquiry pages and adds no cookies, trackers or third-party fonts. The legal pages do not use that helper. Its hosting provider may process request information under its own policies. [CONFIRM: production cookies, hosting logs and any additional analytics]."
+      ],
+      [
+        "International processing",
+        "Processing locations and any cross-border transfers depend on the selected hosting and integration providers. [CONFIRM: countries, applicable transfer restrictions, safeguards and how to request information]. No specific residency guarantee is made in this draft."
+      ],
+      [
+        "Privacy requests and children",
+        "Depending on applicable law, individuals may have rights to access, correct, delete, restrict or object to processing, withdraw consent, receive portable data or complain to a competent authority. Contact valariflow@gmail.com. For information held on behalf of a business, contact that business first; the operator’s assistance procedure requires confirmation. Identity and authority must be checked using proportionate information. Do not send passwords, access tokens or unrelated customer records. The service is intended for business use, not use by children. [CONFIRM: minimum age and handling of children’s data]."
+      ],
+      [
+        "Updates and contact",
+        "The effective date and material-change notice procedure will be confirmed before publication. [CONFIRM: operator name, public contact, postal address and change notification procedure]."
+      ]
+    ]
+  ],
+  "terms-of-service": [
+    "Terms of Service",
+    [
+      [
+        "Operator and acceptance",
+        "These draft terms are proposed for ValariFlow, operated by [CONFIRM: legal operator name, address and jurisdiction]. Effective date: [CONFIRM]. Contact: valariflow@gmail.com. They are not finalized contractual terms. [CONFIRM: acceptance mechanism and business customer agreement]."
+      ],
+      [
+        "Business eligibility and accounts",
+        "The service is intended for authorized business representatives. You must have authority to act for your business and provide accurate registration information. Account registration and workspace access are subject to approval. Protect passwords and access credentials, limit team permissions appropriately and report suspected unauthorized access through the confirmed support channel. [CONFIRM: minimum age and eligibility restrictions]."
+      ],
+      [
+        "Service and current availability",
+        "ValariFlow provides workspace-based contact and conversation management, supported Meta connections, workflow tools and internal credit accounting. Provider replies require configured capabilities and permissions. Broadcasts in the reviewed implementation remain preview-only; a local preview is not a sent, delivered or read message. Optional AI/database features depend on configuration and separate data approvals. Production availability, customer onboarding and Meta authorization remain unverified. These pages do not grant Meta App Review approval."
+      ],
+      [
+        "Contact data and messaging permission",
+        "You are responsible for the lawfulness, accuracy and permitted use of uploaded contacts and message content, and for required notices and consent. Importing a contact does not record opt-in. An administrator’s consent entry records an assertion of permission; it does not independently validate permission. Respect opt-outs and applicable communications laws. Maintain evidence supporting your instructions and do not use data beyond the permissions received."
+      ],
+      [
+        "Meta and acceptable use",
+        "Comply with the current terms and policies applicable to your use of WhatsApp, Instagram, Facebook and Meta Platform APIs, including applicable consent, template and messaging-window requirements. Do not send spam, deceptive or unlawful messages, impersonate others, infringe rights, misuse credentials, circumvent safeguards or attempt unauthorized access. Campaign and automation authors are responsible for recipients, content, timing and authority. Provider permissions, limits, service changes and enforcement can restrict availability."
+      ],
+      [
+        "Plans, payments and credits",
+        "The implementation records subscriptions with three- or six-month terms, administrator-recorded payment verification and append-only credit grants. A credit top-up does not activate a subscription. Internal credit accounting is separate from Meta fees and permissions. Preview broadcasts do not charge credits. An uncertain send can retain a credit reservation pending reconciliation. [CONFIRM: plans, prices, taxes, payment methods, credit expiry, renewal, cancellation, unused balances and refund policy]. No automatic renewal or refund entitlement is established by this draft; mandatory rights under applicable law remain unaffected."
+      ],
+      [
+        "Availability and changes",
+        "No uptime or delivery guarantee is offered in this draft. Maintenance, provider changes, configuration, capacity and failures may affect access or message processing. [CONFIRM: availability commitments, maintenance notices, support coverage and feature-change procedure]."
+      ],
+      [
+        "Content, intellectual property and confidentiality",
+        "You must hold the rights necessary to submit content and instruct its processing. [CONFIRM: customer ownership and a limited license to host, process and transmit content solely to provide the service]. The operator’s ownership or licensing of the service, and both parties’ confidentiality duties, exceptions and permitted disclosures require legal confirmation. No broad reuse license is created by this draft."
+      ],
+      [
+        "Data protection",
+        "The Privacy Policy describes the reviewed data flows and unresolved operational details. Customers are responsible for their business processing instructions and access decisions. [CONFIRM: processing agreement, confidentiality commitments, subprocessors, security duties, incident notification and assistance with privacy requests]. Disconnecting an integration does not erase historical data."
+      ],
+      [
+        "Suspension, termination and exit",
+        "The application supports approval controls and suspended user or workspace states. [CONFIRM: contractual grounds, notice, appeals, termination procedure, export arrangements, billing consequences and deletion after exit]. No self-service account erasure or guaranteed export service has been verified. Follow the Data Deletion page for the draft request route."
+      ],
+      [
+        "Disclaimers and liability",
+        "[CONFIRM WITH LEGAL COUNSEL: applicable warranties, service disclaimer, liability cap, excluded losses, exceptions and any indemnity]. The operator has not confirmed these provisions. Nothing in the final terms should exclude rights or liabilities that applicable law does not permit the parties to exclude."
+      ],
+      [
+        "Law, disputes and changes",
+        "[CONFIRM: governing law, competent courts, dispute process and notice address]. [CONFIRM: change notification, effective dates and acceptance of revised terms]. These choices cannot be inferred from the operator’s location or the development environment."
+      ]
+    ]
+  ],
+  "data-deletion": [
+    "User Data Deletion Instructions",
+    [
+      [
+        "Draft status and contact",
+        "This page is awaiting an operator-confirmed request process. Contact: valariflow@gmail.com. Operator: [CONFIRM: legal name and address]. Effective date: [CONFIRM]. Do not use this draft as an active deletion-request channel or submit it to Meta until these details and fulfillment capability are confirmed."
+      ],
+      [
+        "Business account deletion requests",
+        "Proposed process — subject to operator confirmation: an authorized business administrator contacts the confirmed address with the workspace/business name, their registered email, the account or integration concerned and whether they request account closure, selected record removal or integration disconnect. State the requested scope without attaching message archives or unrelated personal information. The operator must confirm who receives requests, how authority is verified and how deletion can be performed before this process is offered."
+      ],
+      [
+        "Requests about your personal information",
+        "If you exchanged messages with a business using ValariFlow, contact that business first because it generally controls the contact and conversation data. Proposed operator assistance — subject to confirmation: identify the business, the contact identifier you used and the information you want addressed. The operator must confirm a proportionate verification and routing procedure. Never send a password, Meta token, API key or government identity document in an initial request."
+      ],
+      [
+        "Disconnect an integration",
+        "In the reviewed application, a workspace administrator can open Connections, find the connected account, choose Disconnect and confirm. A successful operation marks that connection disconnected, removes its encrypted provider token and revokes the workspace’s client access keys. Provider unsubscribe is attempted when no sibling connection shares the parent asset; errors may prevent completion. Verify the displayed status. Disconnect does not erase contacts, messages, consent, audit or billing records. Provider-side permissions and copies must be managed with Meta separately."
+      ],
+      [
+        "What deletion could cover",
+        "A confirmed fulfillment procedure must address business account/profile information, team memberships, contacts, conversations and message content, provider identifiers, webhook/execution records, workflow and campaign content, and stored credentials as relevant to the request. Deleting an automation is a separate action and is not full account erasure. No self-service account/contact erasure workflow or Meta deletion callback was identified in the reviewed code. Database relationships and protected records require a reviewed implementation rather than an unverified promise of manual deletion."
+      ],
+      [
+        "Retention, backups and exceptions",
+        "[CONFIRM: which records must be retained, the applicable legal grounds, precise scope, retention periods and access restrictions]. Audit and credit records currently have append-only protections; this is a technical constraint, not itself a legal retention obligation. Backups may contain prior data; expiry and prevention of reintroduction after restore require confirmation. Disconnecting ValariFlow does not delete information held by Meta or the business independently."
+      ],
+      [
+        "Response and confirmation",
+        "[CONFIRM: responsible owner, monitored channel, verification method, acknowledgment and completion procedure, escalation, applicable statutory deadlines and backup handling]. There is no verified operational completion timeline. The finalized process should communicate completed actions, retained categories and reasons, and available next steps through the verified contact channel. No request receipt or completion service is established by this draft."
+      ]
+    ]
+  ]
+}

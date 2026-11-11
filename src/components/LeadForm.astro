@@ -1,0 +1,47 @@
+---
+import { site, url } from '../data/site.mjs';
+import Icon from './Icon.astro';
+const { kind = 'demo' } = Astro.props;
+const demo = kind === 'demo';
+---
+<div class="form-card">
+<h2>{demo ? 'What would you like to explore?' : 'Tell us what you have in mind.'}</h2>
+<p class="form-note">This prepares an email in your email app. Nothing is submitted or stored by this website.</p>
+<form data-lead-form data-kind={kind} data-email={site.email} data-conversion={`${kind}-email-prepared`}>
+ <div class="form-row"><div><label for="lead-name">Your name <span aria-hidden="true">*</span></label><input id="lead-name" name="name" autocomplete="name" required maxlength="100"/></div><div><label for="lead-business">Business name <span aria-hidden="true">*</span></label><input id="lead-business" name="business" autocomplete="organization" required maxlength="160"/></div></div>
+ <label for="lead-email">Work email <span aria-hidden="true">*</span></label><input type="email" id="lead-email" name="email" autocomplete="email" required maxlength="200"/>
+ <label for="lead-interest">What would help your business?</label><select id="lead-interest" name="interest"><option>Organizing customer conversations</option><option>Managing contacts and permissions</option><option>Exploring guided workflows</option><option>Planning campaign previews</option><option>Pricing and business fit</option><option>Something else</option></select>
+ <label for="lead-message">Anything you’d like us to know? (optional)</label><textarea id="lead-message" name="message" maxlength="1200" placeholder="Share your goals. Please leave out customer data, passwords and access tokens."></textarea>
+ <label class="consent" for="lead-consent"><input type="checkbox" id="lead-consent" name="consent" required/><span>I understand my email app will open a draft for me to review and send. See the <a href={url('privacy-policy/')}>{site.legalApproved ? 'privacy policy' : 'draft privacy policy'}</a> for the current privacy details.</span></label>
+ <button class="button" type="submit" data-prepare-email disabled>{demo ? 'Prepare demo request email' : 'Prepare sales enquiry email'} <Icon name="mail" size={18}/></button>
+ <p class="form-status" data-form-status role="status" hidden></p>
+</form>
+<noscript><p class="form-note">The email builder needs JavaScript. You can <a href={`mailto:${site.email}`}>email us directly</a> instead.</p></noscript>
+<p class="fallback-email">Prefer to write directly? <a href={`mailto:${site.email}`} data-conversion={`${kind}-direct-email`}>{site.email}</a></p>
+</div>
+<script>
+ for (const form of document.querySelectorAll<HTMLFormElement>('[data-lead-form]')) {
+   form.addEventListener('submit', (event) => {
+     event.preventDefault();
+     if (!form.reportValidity()) return;
+     const data = new FormData(form);
+     const label = form.dataset.kind === 'demo' ? 'Demo request' : 'Sales enquiry';
+     const subject = `${label} — ValariFlow`;
+     const body = ['Name: ' + data.get('name'), 'Business: ' + data.get('business'), 'Email: ' + data.get('email'), 'Interest: ' + data.get('interest'), '', String(data.get('message') || ''), '', 'Prepared on the ValariFlow website. Please reply about this enquiry.'].join('\n');
+     const href = `mailto:${form.dataset.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+     const status = form.querySelector<HTMLElement>('[data-form-status]');
+     if (status) {
+       status.hidden = false;
+       status.replaceChildren(document.createTextNode('Your email draft is ready. Review and send it in your email app. Nothing has been submitted here. '));
+       const link = document.createElement('a');
+       link.href = href;
+       link.textContent = 'Open the email draft again';
+       link.dataset.conversion = 'email-draft-open';
+       status.append(link);
+     }
+     window.location.href = href;
+   });
+   const submit = form.querySelector<HTMLButtonElement>('[data-prepare-email]');
+   if (submit) submit.disabled = false;
+ }
+</script>

@@ -1,0 +1,12 @@
+/* Original operator-supplied JPEG is preserved; no logo recreation or recolouring. */
+.review-banner{background:#eaf0ff;color:#263e70;font-size:12px;padding:10px 0;text-align:center}.review-banner a{color:#1D4ED8;text-decoration:underline;font-weight:650}
+.site-header{height:104px;background:#0B1220;border-bottom-color:#253047}
+.brand-image{display:block;width:180px;flex-shrink:0;line-height:0}
+.brand-image img{display:block;width:100%;height:auto;aspect-ratio:1408/768;object-fit:contain}
+.desktop-nav{color:#d1d9e8}
+.desktop-nav a:hover,.desktop-nav a[aria-current]{color:#a9c2ff}
+.site-header .button{border-color:#6389f2;background:#2757d9}
+.site-header .button:hover{background:#3564e4}
+.site-footer .brand-image{width:235px;margin:-20px 0 -5px -26px}
+@media(max-width:760px){.site-header{height:86px}.brand-image{width:140px}.mobile-menu summary span{background:#d9e2f4}.mobile-menu nav{top:85px}.site-header .header-inner{gap:8px}.site-header .header-cta{font-size:10px;padding:8px 10px}.site-footer .brand-image{width:215px;margin-left:-24px}}
+@media(max-width:360px){.site-header .brand-image{width:115px}}

@@ -1,0 +1,43 @@
+name: Publish ValariFlow marketing
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: marketing-pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Check approved source boundary
+        run: node scripts/source-boundary.mjs
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Require finalized content and operator approval
+        run: npm run check:publication
+      - run: npm run build
+      - run: npm test
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment

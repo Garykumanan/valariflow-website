@@ -1,0 +1,6 @@
+---
+import { url } from '../data/site.mjs';
+import Icon from './Icon.astro';
+const { title = 'Let’s make your next conversation simpler.', text = 'Bring your business questions. Explore the workspace. See what fits.', source = 'page' } = Astro.props;
+---
+<section class="cta-section"><div class="container"><div class="cta-panel"><div><p class="eyebrow light">A good next step</p><h2>{title}</h2><p>{text}</p></div><a class="button button-white" href={url('request-demo/')} data-conversion={`${source}-demo`}>Request a demo <Icon size={18}/></a></div></div></section>
