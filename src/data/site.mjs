@@ -7,7 +7,7 @@ export const site = {
   publicationApproved: false,
   reviewDeploymentApproved: true,
   legalApproved: false,
-  operator: '[CONFIRM: legal operator name and postal address]',
+  operator: 'ValariFlow (business registration pending; legal operator and business address awaiting confirmation)',
   effectiveDate: '[CONFIRM: effective date]',
 };
 export const url = (path = '') => `${site.base}/${path.replace(/^\/+/, '')}`;
